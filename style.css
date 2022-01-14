@@ -16,12 +16,69 @@ body{
   background: #f7f7f7;
 
 }
+/* footer */
+
+.footer{
+  background: var(--item-color) ;
+  width: 100%;
+  flex: 0 0 auto;
+  color: #d3d3d3;
+  height: 240px;
+  position: absolute;
+  bottom: 20px;
+  border-top: 0.4px #3e445f solid;
+  border-bottom: 0.4px #3e445f solid;
+}
+.footer .footer_content{
+  height: 40px;
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  padding: 20px;
+}
+
+.footer .footer_bottom {
+  
+  background-color: var(--item-color);
+  color: #fff;
+  height: 130px;
+  padding: 20px;
+  margin: 10px 10px 10px 10px;
+  width: calc(100% - 20px);
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  top: 50px;
+  bottom: 0px;
+  border-top: 0.1px solid #3e3e3e;
+  border-bottom: 0.4px solid #3e3e3e;
+
+}
+/*.footer-sitemap {
+  max-width: 190px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--item-color);
+}
+*/
+.footer_bottom .disclaimer {
+  font-size: 0.6rem;
+  padding-bottom: 12px;
+  color: #bbbedb;
+  font-weight: 500;
+}
 
 
+/* //footer */
+
+
+/* Wrapper*/
 .wrapper{
   margin-left: 10px;
 
 }
+/* top_navbar */
 .wrapper .top_navbar{
   width: calc(100% - 20px);
   height: 60px;
@@ -84,7 +141,11 @@ body{
 .wrapper .top_navbar .top_menu  ul li a:hover{
   background: #4360b5;
   color: #fff;
+  transition: 200ms ease;
 }
+/* //top_navbar */
+
+/* sidebar */
 .wrapper .sidebar{
   position: fixed;
   top: 70px;
@@ -93,7 +154,7 @@ body{
   width: 200px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
-  transition: all 0.3s ease;
+  transition: all 200ms ease;
 
 }
 
@@ -134,6 +195,9 @@ body{
 .wrapper .sidebar ul li a:hover:before{
   display: block;
 }
+/* //sidebar*/
+
+/* main_container */
 .wrapper .main_container{
   width: calc(100% - 200px);
   margin-top: 70px;
@@ -150,6 +214,10 @@ body{
   line-height: 20px;
   /* width: calc(100% + 135px);*/
 }
+/* //main_container */
+
+
+/* Collapse Toggle*/
 .wrapper.collapse .sidebar{
   width: 70px;
 }
@@ -170,3 +238,6 @@ body{
   width: calc(100% - 70px);
   margin-left: 70px;
 }
+/* //Collapse Toggle */
+
+ /* //Wrapper */
