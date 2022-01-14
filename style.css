@@ -9,7 +9,8 @@
 
 }
 body{
-  background: beige;
+
+  background: #f7f7f7;
 
 }
 
@@ -30,7 +31,7 @@ body{
 .wrapper .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #3b5998;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -56,7 +57,7 @@ body{
 
 }
 .wrapper .top_navbar .top_menu .logo{
-  color: #2e4ead;
+  color: #3b5998;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -72,10 +73,10 @@ body{
   width: 35px;
   height: 35px;
   line-height: 35px;
-  border: 1px solid #2e4ead;
+  border: 1px solid #3b5998;
   text-align: center;
   border-radius: 50%;
-  color: #2e4ead;
+  color: #3b5998;
 }
 .wrapper .top_navbar .top_menu  ul li a:hover{
   background: #4360b5;
@@ -85,7 +86,7 @@ body{
   position: fixed;
   top: 70px;
   left: 10px;
-  background: #2e4ead;
+  background: #3b5998;
   width: 200px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
@@ -99,7 +100,7 @@ body{
   color: #fff;
   position: relative;
   margin-bottom:1px;
-
+  white-space: nowrap;
 }
 .wrapper .sidebar ul li a:before{
   content: "";
@@ -144,6 +145,7 @@ body{
   padding: 15px;
   font-size: 14px;
   line-height: 20px;
+  /* width: calc(100% + 135px);*/
 }
 .wrapper.collapse .sidebar{
   width: 70px;
@@ -162,6 +164,6 @@ body{
 }
 
 .wrapper.collapse .main_container{
-  width: (100% - 70px);
+  width: calc(100% - 70px);
   margin-left: 70px;
 }
