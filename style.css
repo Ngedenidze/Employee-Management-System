@@ -18,6 +18,12 @@ body{
 }
 
 
+@media (max-width: 900px) {
+  .footer {
+  display: none;
+  }
+  }
+
 
 /* Wrapper*/
 .wrapper{
@@ -89,13 +95,14 @@ body{
 /* //top_navbar */
 
 /* sidebar */
-.wrapper .sidebar{
+.wrapper .sidebar {
   position: fixed;
   top: 60px;
   background: var(--item-color);
   width: 200px;
   height: 100%;
   transition: all 200ms ease;
+ 
 
 }
 
@@ -138,6 +145,8 @@ body{
 }
 
 /* sidebar footer */
+@media screen and (min-width: 900px) { 
+
 
 .wrapper .sidebar .footer{
   background: var(--item-color) ;
@@ -181,7 +190,7 @@ body{
   color: #bbbedb;
   font-weight: 500;
 }
-
+}
 
 /* //footer */
 /* //sidebar*/
@@ -234,18 +243,19 @@ body{
 /* //Collapse Toggle */
 /* Main code*/
 .wrapper .login {
-  margin:0;
-  padding:0;
-  font-family:monospace;
-  height: 100vh;
-  overflow: hidden;
+  width: calc(100% - 200px);
+  margin-top: 50px;
+  margin-left: 200px;
+  height: 100%;
+  padding: 15px;
+  transition:  all 0.3s ease;
 
 }
 .wrapper .login .center{
   position: relative;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: calc(25% + 20px);
+  /* transform: translate(-50%, -50%); */ 
   width: 400px;
   background: white;
   border-radius: 10px;
