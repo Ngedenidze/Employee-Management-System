@@ -61,9 +61,9 @@ body{
 .wrapper .top_navbar .top_menu .logo{
   padding-left: 20px;
   color: var(--item-color);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2 px;
 }
 
 .wrapper .top_navbar .top_menu ul{
