@@ -43,12 +43,13 @@ body{
     left: -220px;
     transform: scale(0.7)
   }
-
-  header{
-    display: block;
+  .main_container
+  {
+    position:relative;
+    size-adjust: 50%;
+      left: -8%;
+    transform: scale(0.7)
   }
-
-
 
 }
 
