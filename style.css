@@ -19,6 +19,9 @@ body{
 
 
 @media (max-width: 900px) {
+  .top_navbar{
+    position: absolute;
+  }
   
 
   .hamburger{
@@ -31,15 +34,12 @@ body{
   display: none;
   }
   .wrapper .sidebar {
-    
   display: none;
-  
    
   }
   .login{
   
     position:relative;
-    size-adjust: 50%;
     left: -220px;
     transform: scale(0.7)
   }
@@ -47,8 +47,12 @@ body{
   {
     position:relative;
     size-adjust: 50%;
-      left: -8%;
+    left: -8%;
     transform: scale(0.7)
+  }
+  .top_navbar{
+    border-bottom: var(--item-color) 2px solid;
+    box-shadow: 0 3px 1px rgba(0,0,0, 0.1);
   }
 
 }
@@ -154,8 +158,23 @@ body{
  
 
 }
+.top_navbar .tooltip{
+  position: absolute;
+  top: 20%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
 /* sidebar_tooltip */
-.tooltip{
+
+.sidebar .tooltip{
   position: absolute;
   top: -20px;
   left: calc(100% + 15px);
@@ -171,6 +190,7 @@ body{
   pointer-events: none;
   transition: 0s;
 }
+
 .wrapper li:hover .tooltip{
   position: absolute;
   opacity: 1;
@@ -188,6 +208,11 @@ body{
   transform: translateY(-40%);
 }
 
+
+
+.sidebar.open li .tooltip{
+  display: none;
+}
 #tooltip_1{
   position: absolute;
   top: 30px;
@@ -201,8 +226,16 @@ body{
   top: 150px;
 }
 
-.sidebar.open li .tooltip{
-  display: none;
+#tooltip_4{
+  position: absolute;
+  right: 2%;
+  top: 100% ;
+
+}
+#tooltip_5{
+  position: absolute;
+  right: 0%;
+  top: 100%;
 }
 /* //sidebar tooltip*/
 .wrapper .sidebar ul li a{
