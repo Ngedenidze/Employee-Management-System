@@ -14,3 +14,12 @@ function resize() {
   x.style.display = "none";
    }
 } 
+let dropdownBtn = document.querySelector('.settings-btn');
+let settingsContent = document.querySelector('.settings-content');
+dropdownBtn.addEventListener('click',()=>{
+   if(settingsContent.style.display===""){
+      settingsContent.style.display="block";
+   } else {
+      settingsContent.style.display="";
+   }
+})
